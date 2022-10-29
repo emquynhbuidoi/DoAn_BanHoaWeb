@@ -31,7 +31,7 @@
             @Html.AntiForgeryToken()
             @Html.HiddenFor(model => model.Id)     // Dùng HiddenFor để truyền được id của category vào hàm cần xoá
             <div class="form-actions no-color">
-                <input type="submit" value="XÓA" class="btn btn-danger" /> | @Html.ActionLink("TRỞ LẠI", "Index")
+                <input type="submit" value="Delete" class="btn btn-default" /> | @Html.ActionLink("TRỞ LẠI", "Index")
             </div>
         }
     </div>

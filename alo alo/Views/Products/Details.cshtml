@@ -6,9 +6,8 @@
 }
 <link href="~/Content/padding.css" rel="stylesheet" />
 
-
 <div style="margin: 10px auto; width: 70%;">
-    <h3 style="text-align:center">BẠN CÓ CHẮC CHẮN MUỐN XÓA SẢN PHẨM NÀY?</h3>
+    <h2 style="text-align: center">CHI TIẾT SẢN PHẨM</h2>
     <div>
         <hr />
         <dl class="dl-horizontal">
@@ -31,7 +30,7 @@
                 @Html.DisplayFor(model => model.Price)
             </dd>
             <dt>
-                HÌNH ẢNH
+                HÌNH MINH HỌA
             </dt>
             <dd>
                 <img src="~/Images/@Model.ImagePro" />
@@ -43,12 +42,13 @@
                 @Html.DisplayFor(model => model.Category1.NameCate)
             </dd>
         </dl>
-        @using (Html.BeginForm())
-        {
-            @Html.AntiForgeryToken()
-            <div class="form-actions no-color">
-                <input type="submit" value="Xóa" class="btn btn-danger" /> |
-                @Html.ActionLink("TRỞ LẠI", "Index")
-            </div>
-        }
     </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }, new
+        {
+            @class
+        = "btn btn-success"
+        }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

@@ -81,3 +81,7 @@ D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.csproj.CopyComplete
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.dll
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.pdb
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.abstractions.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.core.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.abstractions.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.core.xml

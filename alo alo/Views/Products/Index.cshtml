@@ -45,7 +45,8 @@
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ImagePro)
+                    @*@Html.DisplayFor(modelItem => item.ImagePro)*@
+                    <p><img src="~/Images/@item.ImagePro" style="width: 80%;" /></p>
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem =>

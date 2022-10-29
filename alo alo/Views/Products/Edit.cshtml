@@ -70,8 +70,7 @@
 
                     <input type="file" name="ImagePro" style="padding-bottom: 20px;" />
 
-                    <img src="~/Images/@Model.ImagePro" /> (Ảnh hiện
-                    tại)
+                    <img src="~/Images/@Model.ImagePro" /> @*(Ảnh hiện tại)*@
                     @Html.ValidationMessageFor(model => model.ImagePro,
                     "", new { @class = "text-danger" })
                 </div>
