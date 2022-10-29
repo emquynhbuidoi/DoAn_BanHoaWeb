@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="~/Content/genaral.css" rel="stylesheet" />
+    <link href="~/Content/header.css" rel="stylesheet" />
+    <link href="~/Content/sidebar.css" rel="stylesheet" />
+    <link href="~/Content/product.css" rel="stylesheet" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+    <title>Bán Hoa - Sỷ Quỳnh</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo-search" id="header_color">
+            <div class="logo">
+                <img class="anh-logo" src="~/anh/logo.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input class="search-input" type="text" name="" id="">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="cart">
+                <img class="xe" src="~/anh/logo-xeday.png" alt="">
+            </div>
+        </div>
+        <div id="menu">
+            <a href="TrangChu"><div class="chon">TRANG CHỦ</div></a>
+            <div class="chon">HƯỚNG DẪN MUA HÀNG</div>
+            <div class="chon">DỊCH VỤ THI CÔNG</div>
+            <div class="chon">CHÍNH SÁCH ĐỔI TRẢ</div>
+            <div class="chon">TIN TỨC</div>
+            <div class="chon">LIÊN HỆ</div>
+        </div>
+
+    </div>
+
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>
+                <a href="TrangChu"><div class="sidebar-link" id="sidebar-link">Hoa Khai Trương</div></a>
+            </li>
+            <li>
+                <a href="HoaChucMung"><div class="sidebar-link" id="sidebar-link">Hoa Chúc Mừng</div></a>
+            </li>
+            <li>
+                <a href="HoaChiaBuon"><div class="sidebar-link" id="sidebar-link">Hoa Chia Buồn</div></a>
+            </li>
+            <li>
+                <div class="sidebar-link" id="sidebar-link">Hoa Tiền - Hoa Sáp Cao Cấp</div>
+            </li>
+            <li>
+                <div class="sidebar-link" id="sidebar-link">Chậu Lan Hồ Điệp</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+
+<script src="~/Scripts/scrollHeader.js"></script>
+
+</html>

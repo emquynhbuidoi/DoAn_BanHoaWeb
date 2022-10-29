@@ -1,0 +1,83 @@
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\alo alo.dll.config
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\alo alo.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\alo alo.pdb
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csc.exe
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csc.exe.config
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csc.rsp
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csi.exe
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csi.exe.config
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\csi.rsp
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.AppContext.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Collections.Immutable.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Console.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Globalization.Calendars.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.IO.Compression.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.IO.FileSystem.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Net.Http.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Net.Sockets.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Reflection.Metadata.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.ValueTuple.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Xml.XPath.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\vbc.exe
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\vbc.exe.config
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\vbc.rsp
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\VBCSCompiler.exe
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\roslyn\VBCSCompiler.exe.config
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Antlr3.Runtime.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\EntityFramework.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\EntityFramework.SqlServer.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Microsoft.Web.Infrastructure.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Newtonsoft.Json.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Helpers.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Mvc.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Optimization.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Razor.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.Deployment.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.Razor.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\WebGrease.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\EntityFramework.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\EntityFramework.SqlServer.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Helpers.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Mvc.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Optimization.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.Razor.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.Deployment.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\System.Web.WebPages.Razor.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Newtonsoft.Json.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Antlr3.Runtime.pdb
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.csproj.AssemblyReference.cache
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.csproj.CoreCompileInputs.cache
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.csproj.CopyComplete
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\obj\Debug\alo alo.pdb

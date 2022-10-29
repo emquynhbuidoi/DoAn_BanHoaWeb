@@ -1,0 +1,124 @@
+﻿.anh-sanpham {
+    width: 100%;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+    padding-top: 199px;
+    padding-left: 180px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+}
+
+
+
+.product {
+    background-color: white;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.15);
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.phanTram {
+    position: absolute;
+    background-color: palevioletred;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 3px;
+    top: 10px;
+    right: 6px;
+}
+
+.thongTin-sanpham {
+    text-align: center;
+}
+
+.ten-sanpham {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.giamgia {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.sale {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.hieuung {
+    position: absolute;
+    background-color: rgba(255, 192, 203, 0.9);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.nut-themVaoGioHang {
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    color: rgba(255, 0, 85, 0.993);
+    border-color: rgba(138, 103, 103);
+    border-style: solid;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px 7px 10px 7px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+    .nut-themVaoGioHang p {
+        font-weight: 500;
+    }
+
+    .nut-themVaoGioHang:active {
+        background-color: rgb(233, 233, 233);
+    }
+
+.product:hover .hieuung {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+
+
+@media (max-width: 730px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 731px) and (max-width: 999px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
