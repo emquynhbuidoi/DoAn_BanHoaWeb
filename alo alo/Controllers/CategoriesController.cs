@@ -11,10 +11,19 @@ namespace alo_alo.Controllers
     {
         DBSportStoreEntities database = new DBSportStoreEntities();
         // GET: Categories
-        public ActionResult Index()
+        public ActionResult Index(string _name)   // Thêm chức năng tìm kiếm
         {
-            var categories = database.Categories.ToList();
-            return View(categories);
+            if(_name == null)
+            {
+                var categories = database.Categories.ToList();
+                return View(categories);
+            }
+            else
+            {
+                return View(database.Categories.Where(s => s.NameCate.Contains(_name)).ToList());
+            }
+            //var categories = database.Categories.ToList();
+            //return View(categories);
         }
 
         [HttpGet]

@@ -6,6 +6,7 @@
 }
 <link href="~/Content/padding.css" rel="stylesheet" />
 
+
 <div style="margin: 10px auto; width: 70%;">
     <h2 style="text-align: center">THÔNG TIN CATEGORIES</h2>
     <p>
@@ -13,6 +14,17 @@
         {
             @class = "btn btn-primary"
         })
+
+    </p>
+    <p>
+        @*Thêm chức năng tìm kiếm catogories*@
+        @using (Html.BeginForm("Index", "Categories", FormMethod.Get))
+        {
+            <div class="input-group">
+                <input type="search" name="_name" class="form-control rounded" placeholder="Search" />
+                <input type="submit" value="Search" class="btn btn-primary">
+            </div>
+        }
     </p>
     <table class="table">
         <tr>
@@ -51,3 +63,4 @@
         }
     </table>
 </div>
+
