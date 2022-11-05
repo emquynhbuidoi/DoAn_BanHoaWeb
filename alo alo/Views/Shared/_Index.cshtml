@@ -20,30 +20,32 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo-search" id="header_color">
-            <div class="logo">
-                <img class="anh-logo" src="~/anh/logo.png" alt="">
+            <div class="logo-search" id="header_color">
+                <div class="logo">
+                    <img class="anh-logo" src="~/anh/logo.png" alt="">
+                </div>
+                <div class="search-bar">
+                    <input class="search-input" type="text" name="" id="">
+                    <button class="search-button">Search</button>
+                </div>
+                <div class="cart">
+                    <div class="xe">
+                        @Html.Action("CartPartial", "Cart")
+                    </div>
+                </div>
             </div>
-            <div class="search-bar">
-                <input class="search-input" type="text" name="" id="">
-                <button class="search-button">Search</button>
+            <div id="menu">
+                <a href="~/CustomerProducts"><div class="chon">TRANG CHỦ</div></a>
+                <div class="chon">HƯỚNG DẪN MUA HÀNG</div>
+                <div class="chon">DỊCH VỤ THI CÔNG</div>
+                <div class="chon"><a href="~/Categories">PRODUCT STORE</a></div>
+                <div class="chon"><a href="~/Products">ADMIN PRODUCT</a></div>
+                <div class="chon"><a href="#">LIÊN HỆ</a></div>
             </div>
-            <div class="cart">
-                <img class="xe" src="~/anh/logo-xeday.png" alt="">
-            </div>
+
         </div>
-        <div id="menu">
-            <a href="TrangChu"><div class="chon">TRANG CHỦ</div></a>
-            <div class="chon">HƯỚNG DẪN MUA HÀNG</div>
-            <div class="chon">DỊCH VỤ THI CÔNG</div>
-            <div class="chon">CHÍNH SÁCH ĐỔI TRẢ</div>
-            <div class="chon">TIN TỨC</div>
-            <div class="chon">LIÊN HỆ</div>
-        </div>
 
-    </div>
-
-
+  
     <div class="sidebar" id="sidebar">
         <ul>
             <li>
