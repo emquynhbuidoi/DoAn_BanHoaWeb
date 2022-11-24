@@ -9,6 +9,9 @@
 <div style="margin: 10px auto; width: 70%;">
     <h2 style="text-align: center">THÔNG TIN GIỎ HÀNG</h2>
     <hr />
+
+    <a class="btn btn-primary" href="@Url.Action("Index", "CustomerProducts")">Tiếp tục mua hàng</a>
+
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -27,9 +30,21 @@
                     <td>@product.ProductID</td>
                     <td>@product.NamePro</td>
                     <td><img src="~/Images/@product.ImagePro" /></td>
-                    <td>@product.Number</td>
+                    @*<td>@product.Number</td>*@
+                    <td>
+                        @using (Html.BeginForm("Update_Cart_Quantity", "Cart"))
+                        {
+                            <input type="hidden" name="idPro" value="@product.ProductID" />
+                            <input type="number" name="cartQuantity" value="@product.Number" />
+                            <input type="submit" value="cập nhật" class="btn btn-primary" />
+                        }
+                    </td>
+
                     <td>@product.Price</td>
                     <td>@product.FinalPrice()</td>
+                    <td>
+                        <a href="~/Cart/RemoveCart/@product.ProductID" class="btn btn-primary">Xoá</a>
+                    </td>
                 </tr>
             }
             <tr style="font-weight:bold; text-align:right; color:red;">
@@ -38,4 +53,30 @@
             </tr>
         </tbody>
     </table>
+
+    @using (Html.BeginForm("CheckOut", "Cart"))
+    {
+        <table style="border-collapse: separate; border-spacing: 5px;">
+            <tr>
+                <td>Tên khách hàng: </td>
+                <td><input type="text"  name="NameCustomer" required /></td>
+            </tr>
+            <tr>
+                <td>Địa Chỉ: </td>
+                <td><input type="text"  name="AddressDeliverry" required /></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="submit" name="" value="Đặt Hàng" class="btn btn-success" />
+                    <a href="@Url.Action("Register", "Customer")" class="btn btn-success">Đăng Ký</a>
+                </td>
+            </tr>
+        </table>
+    }
+
+
+
+
+
 </div>

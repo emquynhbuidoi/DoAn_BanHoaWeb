@@ -14,6 +14,13 @@ namespace alo_alo.Models
         public decimal Price { get; set; }
         public int Number { get; set; }
 
+
+
+        public int soLoaiSp { get; set; }
+
+
+
+
         //Tính FinalPrice = Price * Number
         public decimal FinalPrice()
         {
@@ -28,6 +35,7 @@ namespace alo_alo.Models
             this.ImagePro = productDB.ImagePro;
             this.Price = (decimal)productDB.Price;
             this.Number = 1;
+
         }
 
 

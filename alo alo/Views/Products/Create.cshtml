@@ -2,11 +2,10 @@
 
 @{
     ViewBag.Title = "Create";
-    Layout = "~/Views/Shared/_Index.cshtml";
+    Layout = "~/Views/Shared/_Admin.cshtml";
 }
-<link href="~/Content/padding.css" rel="stylesheet" />
 
-<div style="margin: 10px auto; width: 70%;">
+<div style=" margin: 10px auto; width: 70%;">
     <h2 style="text-align: center">TẠO MỚI PRODUCT</h2>
     @using (Html.BeginForm("Create", "Products", FormMethod.Post, new
     {

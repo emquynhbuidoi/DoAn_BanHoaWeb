@@ -1,0 +1,47 @@
+﻿@model IEnumerable<alo_alo.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div style="margin: 10px auto; width: 70%;">
+    <h2 style="text-align: center">THÔNG TIN KHÁCH HÀNG</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                Tên Khách Hàng
+            </th>
+            <th>
+                SĐT
+            </th>
+            <th>
+                Gmail
+            </th>
+            <th>
+               ID Khách Hàng
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NameCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IDCus)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

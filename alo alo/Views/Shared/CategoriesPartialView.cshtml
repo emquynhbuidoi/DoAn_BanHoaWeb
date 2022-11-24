@@ -1,0 +1,34 @@
+﻿@*@model IEnumerable<alo_alo.Models.Category>*@
+@using alo_alo.Models
+@model List<Category>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div style="margin-top: 80px;">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="border-radius: 5px;">
+            Loại Hoa
+        </button>
+
+        <ul class="dropdown-menu">
+            <li>
+                @foreach (var item in Model)
+                {
+                    @Html.ActionLink(item.NameCate, "Indexmoi",
+                    "CustomerProducts", new { categories = item.IDCate.Trim() }, new { @class = "dropdown-item" })
+
+                }
+            </li>
+            <li>
+
+                @Html.ActionLink("All", "Index",
+                "CustomerProducts", new { categories = "All" }, new { @class = "dropdown-item" })
+
+
+            </li>
+        </ul>
+
+    </div>
+</div>
+

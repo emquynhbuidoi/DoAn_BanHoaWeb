@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using alo_alo.Models;
-using System.Data.Entity;
-using System.Linq;
-using System.IO;
-using System.Net;
 
 namespace alo_alo.Controllers
 {
@@ -19,10 +16,15 @@ namespace alo_alo.Controllers
         private DBSportStoreEntities db = new DBSportStoreEntities();
 
         // GET: Products
-        public ActionResult Index()
+        public ActionResult Index(string tenSp)
         {
-            var products = db.Products.Include(p => p.Category1);
-            return View(products.ToList());
+            if (tenSp != "" && tenSp != null)
+            {
+                var products = db.Products.Where(p => p.NamePro == tenSp);
+                return View(products.ToList());
+            }
+            
+            return View(db.Products.ToList());
         }
 
         // GET: Products/Details/5

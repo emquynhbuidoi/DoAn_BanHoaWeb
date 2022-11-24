@@ -1,5 +1,13 @@
-﻿<a href="@Url.Action("GetCartInfo", "Cart")" style="text-decoration:none; color: red; font-weight: bold">
+﻿<link href="~/Content/header.css" rel="stylesheet" />
+<a href="@Url.Action("GetCartInfo", "Cart")" style="text-decoration:none; color: red; font-weight: bold">
     <div class="cart">
-        <img class="xe" src="/anh/logo-xeday.png" /> <!--Cart (@ViewBag.TotalNumber)-->   @*//div*@
+        <div style="position: relative;">
+            <img class="xe"  src="/anh/logo-xeday.png" height="30" width="30"; style="border-radius: 3px;"/>
+            <div style=" position: absolute; top: -12px; right: -6px; background-color: rgb(202, 0, 0); 
+                        color: white; font-family: Roboto,Arial; font-size: 11px; padding-left: 5px; 
+                        padding-right: 5px; padding-top:1px; border-radius: 15px;">
+                @ViewBag.TotalNumber
+            </div>
+        </div>
     </div>
 </a>

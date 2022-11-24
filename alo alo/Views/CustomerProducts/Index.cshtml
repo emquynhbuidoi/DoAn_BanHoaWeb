@@ -1,30 +1,83 @@
-﻿@model IEnumerable<alo_alo.Models.Product>
+﻿@*@model IEnumerable<alo_alo.Models.Product>*@
+@using alo_alo.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Product>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Index.cshtml";
 }
 
-<link href="~/Content/padding.css" rel="stylesheet" />
-<div style="margin: 10px auto; width: 90%;">
-    <h2 style="text-align: center">DANH SÁCH SẢN PHẨM</h2>
-    <hr />
-    <div class="row">
-        @foreach (var sanpham in Model)
-        {
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card h-100">
-                    <img class="card-img-top"
-                         src="~/Images/@sanpham.ImagePro">
-                    <div class="card-body" style="text-align: center">
-                        <h4 class="card-title">@sanpham.NamePro</h4>
-                        <p class="card-text">@sanpham.Price</p>
-                        @Html.ActionLink("CHI TIẾT", "Details", new
-                        {
-                            id = sanpham.ProductID
-                        }, new { @class = "btn btn-primary" })
-                    </div>
+<style>
+    #div-ds {
+        text-align: center;
+        background-color: forestgreen;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .MenuPage li {
+        display: inline;
+    }
+</style>
+
+
+<div style="margin: 10px auto; width: 85%;">
+    <hr style="height: 3px; border-width: 0; background-color: red;" />
+
+    <h2 style="text-align: center ; margin: 0; font-family: Roboto, Arial;">DANH SÁCH SẢN PHẨM</h2>
+
+    <hr style="height: 3px; border-width: 0; color: red; background-color: red; margin-top: 40px; margin-bottom: 40px;" />
+
+    @Html.Action("GetProductsByCategory", "CustomerProducts")
+
+    @using (Html.BeginForm("Indexmoi", "CustomerProducts", FormMethod.Get))
+    {
+        <p>
+            <div class="row justify-content-end">
+                <div class="col-lg-3">
+                    <input style="height: 45px; border-radius: 4px;" class="form-control" type="text" name="tenSp" value="" placeholder="Tên sp tìm .." />
+                </div>
+                <div class="col-lg-1">
+                    <button style="margin-left: -33px; border-radius: 4px;" type="submit" class="btn btn-primary">Search</button>
                 </div>
             </div>
-        }
+        </p>
+        <br />
+
+        <div class="row">
+            @foreach (var sanpham in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 60px;">
+                    <div class="card h-100">
+                        <div class="thumbnail">
+                            <img class="card-img-top"
+                                 src="~/Images/@sanpham.ImagePro">
+                            <strong>@sanpham.NamePro</strong>
+                            <p class="" style="">@sanpham.Price vnđ</p>
+                            <div class="" data-toggle="modal">
+                                @Html.ActionLink("CHI TIẾT", "Details", new
+                                  {
+                                      id = sanpham.ProductID
+                                  }, new { @class = "btn" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    }
+
+    Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    <div class="MenuPage">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
     </div>
+
+
 </div>
+
+
+
+
+

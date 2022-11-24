@@ -85,3 +85,7 @@ D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.core.dll
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.abstractions.xml
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\xunit.core.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.Mvc.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.Mvc.xml

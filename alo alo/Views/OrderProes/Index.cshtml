@@ -1,0 +1,52 @@
+﻿@model IEnumerable<alo_alo.Models.OrderPro>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div style="margin: 10px auto; width: 70%;">
+    <h2 style="text-align: center">THÔNG TIN ĐƠN HÀNG</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                Thời Gian Đăt Hàng
+            </th>
+            <th>
+                Địa Chỉ
+            </th>
+            <th>
+                Tên Khách Hàng
+            </th>
+            <th>
+                ID Khách Hàng
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOrder)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AddressDeliverry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.NameCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IDCus)
+                </td>
+                <td>
+                    @Html.ActionLink("Thông tin", "Index", "OrderDetails", new
+                                  {
+                                      id = item.ID
+                                  }, new { @class = "btn" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

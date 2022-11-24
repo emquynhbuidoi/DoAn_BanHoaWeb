@@ -1,0 +1,57 @@
+﻿@model alo_alo.Models.AdminUser
+@{
+    ViewBag.Title = "LoginAcount";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+
+<style>
+    .field-validation-error {
+        color: red;
+    }
+</style>
+
+<div style="margin: 10px auto; width: 70%;">
+    <h2 style="text-align: center">ĐĂNG NHẬP</h2>
+    @using (Html.BeginForm("LoginAcount", "LoginUser"))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Tên Khách Hàng:</label>
+            @Html.EditorFor(model => model.NameUser, new { style = "field-validation-error", @class="form-control" })
+            <p>@Html.ValidationMessageFor(model => model.NameUser)</p>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Mật Khẩu:</label>
+            @Html.EditorFor(model => model.PasswordUser, new { type="password", style = "field-validation-error", @class = "form-control" })
+            <p>@Html.ValidationMessageFor(model => model.PasswordUser)</p>
+
+             
+            <p class="field-validation-error"> @ViewBag.ErrorInfo</p>
+            
+        </div>
+        <input type="submit" class="btn btn-primary" value="Đăng Nhập" />
+        <a style="color: red;" class="btn btn-primary" href="~/LoginUser/RegisterUser">Đăng Ký</a>
+    }
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

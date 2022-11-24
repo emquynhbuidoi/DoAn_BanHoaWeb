@@ -8,10 +8,19 @@ using System.Web.Mvc;
 
 namespace alo_alo.Controllers
 {
-    public class UsersController : Controller
+    public class CustomerController : Controller
     {
-        private DBSportStoreEntities database = new DBSportStoreEntities();
-        // GET: Users
+        DBSportStoreEntities database = new DBSportStoreEntities();
+        // GET: Customer
+
+        public ActionResult Index()
+        {
+            var cus = database.Customers;
+            return View(cus.ToList());
+        }
+
+
+
         public ActionResult Register()
         {
             return View();
@@ -29,11 +38,11 @@ namespace alo_alo.Controllers
                 if (string.IsNullOrEmpty(cust.EmailCus))
                     ModelState.AddModelError(string.Empty, "Email không được để trống");
                 if (string.IsNullOrEmpty(cust.PhoneCus))
-                    ModelState.AddModelError(string.Empty, "Điện thoại không được để trống");
-                //Kiểm tra  xem có người nào đã đăng kí với tên đăng nhập này chưa
-                var khachhang = database.Customers.FirstOrDefault(k => k.NameCus == cust.NameCus);
+                    ModelState.AddModelError(string.Empty, "Điện thoại không được để trống");//Kiểm tra xem có người nào đã đăng kí với tên đăng nhập này hay chưa
+                var khachhang = database.Customers.FirstOrDefault(k =>
+                k.EmailCus == cust.EmailCus);
                 if (khachhang != null)
-                    ModelState.AddModelError(string.Empty, "Đã có người đăng kí tên này");
+                    ModelState.AddModelError(string.Empty, "Đã có người đăng kí với Email này");
                 if (ModelState.IsValid)
                 {
                     database.Customers.Add(cust);
@@ -44,7 +53,7 @@ namespace alo_alo.Controllers
                     return View();
                 }
             }
-            return RedirectToAction("Login");
+            return RedirectToAction("GetCartInfo", "Cart");
         }
 
         [HttpGet]
@@ -52,25 +61,25 @@ namespace alo_alo.Controllers
         {
             return View();
         }
-        //Nhận thông tin người dùng trả về
         [HttpPost]
         public ActionResult Login(Customer cust)
         {
             if (ModelState.IsValid)
             {
                 if (string.IsNullOrEmpty(cust.NameCus))
+                {
                     ModelState.AddModelError(string.Empty, "Tên đăng nhập không được để trống");
+                }
                 if (string.IsNullOrEmpty(cust.PassCus))
-                    ModelState.AddModelError(string.Empty, "Tên đăng nhập không được để trống");
+                {
+                    ModelState.AddModelError(string.Empty, "Mật khẩu không được để trống");
+                }
                 if (ModelState.IsValid)
                 {
-                    //Timg khách hàng có tên đăng nhập và password hợp lệ trong CSDL
                     var khachhang = database.Customers.FirstOrDefault(k => k.NameCus == cust.NameCus && k.PassCus == cust.PassCus);
                     if(khachhang != null)
                     {
-                        ViewBag.ThongBao = "Chúc mừng đăng nhập thành công";
-                        //luu vaof session
-                        Session["TaiKhoan"] = khachhang;
+                        return RedirectToAction("GetCartInfo", "Cart");
                     }
                     else
                     {
@@ -80,16 +89,6 @@ namespace alo_alo.Controllers
             }
             return View();
         }
-
-
-
-
-
-
-
-
-
-
 
 
 
