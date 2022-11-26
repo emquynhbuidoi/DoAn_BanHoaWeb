@@ -7,7 +7,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="NameUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="RoleUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="PasswordUser" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PasswordUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Category">
     <Key>

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -91,6 +92,30 @@ namespace alo_alo.Controllers
         }
 
 
+        // GET: OrderProes/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var cus = database.Customers.Find(id);
+            if (cus == null)
+            {
+                return HttpNotFound();
+            }
+            return View(cus);
+        }
 
+        // POST: OrderProes/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Customer khachhang = database.Customers.Where(s => s.IDCus == id).FirstOrDefault();
+            database.Customers.Remove(khachhang);
+            database.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

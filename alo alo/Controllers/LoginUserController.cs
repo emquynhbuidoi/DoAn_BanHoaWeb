@@ -23,7 +23,13 @@ namespace alo_alo.Controllers
         [HttpPost]
         public ActionResult LoginAcount(AdminUser _user)
         {
-            var check = db.AdminUsers.Where(s => s.NameUser == _user.NameUser && s.PasswordUser == _user.PasswordUser).FirstOrDefault();
+            //Giải mã mật khẩu
+            var user = db.AdminUsers.Where(s => s.NameUser == _user.NameUser).FirstOrDefault();
+            bool test = BCrypt.Net.BCrypt.Verify(_user.PasswordUser, user.PasswordUser);
+
+
+
+            var check = db.AdminUsers.Where(s => s.NameUser == _user.NameUser && test == true ).FirstOrDefault();
 
             if (check == null) // login sai thong tin
             {
@@ -37,9 +43,7 @@ namespace alo_alo.Controllers
             else
             {
                 db.Configuration.ValidateOnSaveEnabled = false;
-                //Session["ID"] = _user.ID;
-                //Session["PasswordUser"] = _user.PasswordUser;
-
+              
                 Session["RoleUser"] = check.RoleUser;
                 Session["NameUser"] = check.NameUser;
 
@@ -67,6 +71,12 @@ namespace alo_alo.Controllers
                 var check_ID = db.AdminUsers.Where(s => s.ID == _user.ID).FirstOrDefault();
                 if(check_ID == null)  // chua co ID
                 {
+                    //Mã hoá mật khẩu
+                    int costParamerter = 12;
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(_user.PasswordUser, costParamerter);
+
+                    _user.PasswordUser = hashedPassword;
+
                     db.Configuration.ValidateOnSaveEnabled = false;
                     db.AdminUsers.Add(_user);
                     db.SaveChanges();

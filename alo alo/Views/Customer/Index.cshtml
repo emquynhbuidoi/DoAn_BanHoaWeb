@@ -40,6 +40,12 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.IDCus)
                 </td>
+                <td>
+                    @Html.ActionLink("Xoá", "Delete", "Customer", new
+                                 {
+                                     id = item.IDCus
+                                 }, new { @class = "btn" })
+                </td>
             </tr>
         }
 

@@ -45,6 +45,12 @@
                                       id = item.ID
                                   }, new { @class = "btn" })
                 </td>
+                <td>
+                    @Html.ActionLink("Xoá", "Delete", "OrderProes", new
+                                  {
+                                      id = item.ID
+                                  }, new { @class = "btn" })
+                </td>
             </tr>
         }
 

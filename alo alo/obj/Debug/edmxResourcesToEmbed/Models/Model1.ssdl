@@ -7,7 +7,7 @@
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="NameUser" Type="nvarchar(max)" />
     <Property Name="RoleUser" Type="nvarchar(max)" />
-    <Property Name="PasswordUser" Type="nchar" MaxLength="50" />
+    <Property Name="PasswordUser" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Category">
     <Key>

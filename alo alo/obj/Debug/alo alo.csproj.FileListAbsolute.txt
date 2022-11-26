@@ -89,3 +89,6 @@ D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.Mvc.dll
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.xml
 D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\PagedList.Mvc.xml
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\BCrypt.Net.dll
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\BCrypt.Net.pdb
+D:\Thực hành ở trường\Học HTML\Đồ Án bán hoa\inVStudio\banHoaMoi\alo alo\alo alo\bin\BCrypt.Net.xml

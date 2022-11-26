@@ -114,7 +114,7 @@ namespace alo_alo.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            OrderPro orderPro = db.OrderProes.Find(id);
+            var orderPro = db.OrderProes.Where(s => s.ID == id).FirstOrDefault();
             db.OrderProes.Remove(orderPro);
             db.SaveChanges();
             return RedirectToAction("Index");

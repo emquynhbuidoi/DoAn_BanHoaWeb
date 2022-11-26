@@ -1,4 +1,4 @@
-﻿@model alo_alo.Models.OrderPro
+﻿@model alo_alo.Models.Customer
 
 @{
     ViewBag.Title = "Delete";
@@ -7,35 +7,36 @@
 
 <div style="margin: 10px auto; width: 70%;">
     <h3 style="text-align:center">
-        BẠN CÓ CHẮC CHẮN MUỐN XÓA ĐƠN HÀNG NÀY?
+        BẠN CÓ CHẮC CHẮN MUỐN XÓA TÀI KHOẢN NÀY?
     </h3>
     <div>
-        <h4>Thông Tin Hoá Đơn</h4>
+        <h4>Thông Tin Khách Hàng</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                <strong>Thời Gian Đặt Mua:</strong>
+                <strong>Tên khách hàng:</strong>
             </dt>
 
             <dd>
-                @Html.DisplayFor(model => model.DateOrder)
+                @Html.DisplayFor(model => model.NameCus)
             </dd>
 
             <dt>
-                <strong>Địa chỉ giao tới:</strong>
+                <strong>Số điện thoại:</strong>
             </dt>
 
             <dd>
-                @Html.DisplayFor(model => model.AddressDeliverry)
+                @Html.DisplayFor(model => model.PhoneCus)
             </dd>
 
             <dt>
-                <strong>Tên người nhận:</strong>
+                <strong>Email:</strong>
             </dt>
 
             <dd>
-                @Html.DisplayFor(model => model.Customer.NameCus)
+                @Html.DisplayFor(model => model.EmailCus)
             </dd>
+
 
         </dl>
 
@@ -45,7 +46,7 @@
 
             <div class="form-actions no-color">
                 <input type="submit" value="Xoá" class="btn btn-default" /> |
-                @Html.ActionLink("Trở về", "Index")
+                @Html.ActionLink("Trờ lại", "Index")
             </div>
         }
     </div>
